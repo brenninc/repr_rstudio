@@ -1,0 +1,7 @@
+#Change /home/christian/docker/rdata/ to match where you want to store data files.
+
+docker run -d -p 8787:8787 -v /home/christian/docker/rdata/:/home/rstudio/rdata --name=repr_rstudio -e USER=rstudio -e PASSWORD=rstudio brenninc/repr_rstudio
+
+stop repr_rstudio
+
+start repr_rstudio
